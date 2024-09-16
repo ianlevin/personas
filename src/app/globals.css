@@ -1,0 +1,368 @@
+/* globals.css */
+
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  transition: background-color 0.5s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Efecto hover en botones y enlaces */
+a, button {
+  transition: all 0.3s ease;
+}
+
+a:hover, button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+header {
+  background-color: #1f2937;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header nav a:hover {
+  color: #38bdf8;
+}
+
+/* Contenedor principal */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #3b82f6;
+  position: relative;
+}
+
+.container h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #3b82f6;
+  margin: 10px auto;
+  border-radius: 4px;
+}
+
+/* Estilo de las tarjetas */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  color: #1f2937;
+}
+
+.card p {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Formulario de contacto */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #e5e7eb;
+  background-color: #f3f4f6;
+  font-size: 1rem;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #3b82f6;
+  background-color: #ffffff;
+}
+
+form button {
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #1f2937;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Animaciones épicas */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container, .card, form {
+  animation: fadeIn 0.6s ease-in-out;
+}
+/* globals.css */
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.5s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+}
+
+/* Efecto hover en botones y enlaces */
+a, button {
+  transition: all 0.3s ease;
+}
+
+a:hover, button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+header {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header nav a:hover {
+  color: #00b4d8;
+}
+
+/* Contenedor principal */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto 0;
+  padding: 40px 0;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #0077b6;
+  position: relative;
+}
+
+.container h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 5px;
+  background-color: #0077b6;
+  margin: 10px auto;
+  border-radius: 4px;
+}
+
+/* Tarjetas de personas */
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin: 20px 0;
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  color: #0077b6;
+}
+
+.card p {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.card .age {
+  font-size: 1.2rem;
+  color: #00b4d8;
+  margin-top: 10px;
+}
+
+/* Formulario de contacto */
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background-color: #f3f4f6;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #0077b6;
+  background-color: #ffffff;
+}
+
+form button {
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #005f87;
+  transform: translateY(-2px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Efectos animación */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container, .card, form {
+  animation: fadeIn 0.6s ease-in-out;
+}
