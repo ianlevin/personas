@@ -1,18 +1,13 @@
-// src/app/estadisticas/page.js
 import Personas from '../data/Personas';
 
 export default function Estadisticas() {
-  // Convertir edades a número, ignorar valores no válidos (NaN)
   const edades = Personas.map(persona => parseInt(persona.edad)).filter(edad => !isNaN(edad));
 
-  // Calcular estadísticas
   const mayores35 = edades.filter(edad => edad > 35).length;
   
-  // Persona(s) de mayor edad
   const maxEdad = Math.max(...edades);
   const personasMaxEdad = Personas.filter(persona => parseInt(persona.edad) === maxEdad);
   
-  // Persona(s) de menor edad
   const minEdad = Math.min(...edades);
   const personasMinEdad = Personas.filter(persona => parseInt(persona.edad) === minEdad);
 

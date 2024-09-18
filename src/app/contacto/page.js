@@ -1,4 +1,3 @@
-// src/app/contacto/page.js
 export default function Contacto() {
     return (
       <div>
